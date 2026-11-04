@@ -1,1 +1,279 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="OOEN FX AI Trading System — quantitative XAUUSD research, market analysis, and disciplined risk management.">
+  <title>OOEN FX | AI Trading Research</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #121a2c;
+      --gold: #f2c66d;
+      --text: #f4f6fb;
+      --muted: #a8b2c7;
+      --line: #28344a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .container { width: min(1080px, 90%); margin: auto; }
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #0b1020;
+    }
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding: 14px 0;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .logo {
+      width: 44px;
+      height: 44px;
+      border: 2px solid var(--gold);
+      color: var(--gold);
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-size: 25px;
+      font-weight: 900;
+    }
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+    .status {
+      color: #a9e8c1;
+      border: 1px solid #35674c;
+      border-radius: 30px;
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+    .hero { padding: 76px 0 64px; }
+    .eyebrow {
+      color: var(--gold);
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin: 18px 0;
+      max-width: 800px;
+    }
+    h1 span { color: var(--gold); }
+    .intro {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 670px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid var(--gold);
+    }
+    .primary { background: var(--gold); color: #17130b; }
+    .secondary { color: var(--gold); }
+    .notice {
+      margin: 0 0 36px;
+      padding: 16px 18px;
+      background: #17251f;
+      border: 1px solid #35674c;
+      border-radius: 12px;
+      color: #d7f4e1;
+      font-size: 14px;
+    }
+    section { padding: 40px 0; }
+    h2 { font-size: 28px; margin: 0 0 12px; }
+    .section-intro { color: var(--muted); max-width: 700px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      padding: 22px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+    .card .symbol { color: var(--gold); font-size: 25px; }
+    .card h3 { margin: 10px 0 6px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .pill {
+      display: inline-block;
+      color: var(--gold);
+      border: 1px solid #66532e;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 12px;
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 35px;
+    }
+    footer p { margin: 5px 0; }
+    @media (max-width: 520px) {
+      .hero { padding-top: 52px; }
+      h1 { letter-spacing: -1px; }
+      .intro { font-size: 16px; }
+      .status { font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="brand">
+        <div class="logo">O</div>
+        <div>
+          OOEN FX
+          <small>AI TRADING RESEARCH</small>
+        </div>
+      </div>
+      <span class="status">DEMO · NOT LIVE</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">QUANTITATIVE RESEARCH · XAUUSD</div>
+      <h1>Trade with data.<br><span>Manage risk first.</span></h1>
+      <p class="intro">
+        OOEN FX is an AI-assisted trading research project focused on
+        Gold (XAUUSD), systematic market analysis, strategy testing,
+        and disciplined risk management.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="#about">Explore the project</a>
+        <a class="button secondary" href="#safety">Our safety principles</a>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="notice">
+        <strong>Research and demo status:</strong>
+        This website is an informational project homepage. It does not
+        provide verified live prices, trading signals, account connections,
+        or order execution.
+      </div>
+    </div>
+
+    <section class="container" id="about">
+      <div class="eyebrow">THE PROJECT</div>
+      <h2>Built around evidence, not promises</h2>
+      <p class="section-intro">
+        The goal is to develop and evaluate quantitative trading methods
+        using validated market data, multi-timeframe analysis, and
+        out-of-sample testing. Results must be tested rather than assumed.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <div class="symbol">⌁</div>
+          <h3>Market analysis</h3>
+          <p>Research focused on XAUUSD and multiple timeframes, subject
+          to reliable data and validation.</p>
+        </article>
+        <article class="card">
+          <div class="symbol">◈</div>
+          <h3>Systematic testing</h3>
+          <p>Backtesting, out-of-sample evaluation, transaction-cost
+          awareness, and reproducible checks.</p>
+        </article>
+        <article class="card">
+          <div class="symbol">⛨</div>
+          <h3>Risk management</h3>
+          <p>Defined risk limits, safety checks, and a preference for
+          NO TRADE when conditions are not verified.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="safety">
+      <div class="eyebrow">SAFETY FIRST</div>
+      <h2>Protect capital. Verify every step.</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="pill">DATA</span>
+          <h3>Validate before use</h3>
+          <p>Market data must pass integrity and freshness checks before
+          it can be considered suitable for research.</p>
+        </article>
+        <article class="card">
+          <span class="pill">CONTROL</span>
+          <h3>Fail safely</h3>
+          <p>Missing, stale, or inconsistent information should lead to
+          rejection rather than an assumed trading opportunity.</p>
+        </article>
+        <article class="card">
+          <span class="pill">EXECUTION</span>
+          <h3>Disabled by default</h3>
+          <p>Real order execution is not enabled by this website.
+          Publishing this page does not authorize trades.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="card">
+        <div class="eyebrow">IMPORTANT DISCLAIMER</div>
+        <h2>Research project, not financial advice</h2>
+        <p class="section-intro">
+          Trading gold and other leveraged instruments involves substantial
+          risk. No profitability or investment outcome is guaranteed.
+          This website is informational and is not a broker, investment
+          adviser, or trading execution service.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>OOEN FX AI Trading System</strong></p>
+      <p>Quantitative research · XAUUSD · Risk management</p>
+      <p>Demo status only. No live trading connection is provided here.</p>
+      <p>&copy; 2026 OOEN FX. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
